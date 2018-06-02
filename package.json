@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "build--github-pages": "cross-env PUBLIC_URL='forms/dist' webpack --config webpack.config.js"
+    "build--github-pages": "cross-env REACT_APP_PATH='forms/dist' webpack --config webpack.config.js"
   },
   "keywords": [],
   "author": "Fedor <kostrov.fedorr@gmail.com>",
