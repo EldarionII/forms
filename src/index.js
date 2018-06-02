@@ -14,4 +14,4 @@ function component()
 
 document.body.appendChild(component());
 
-ReactDOM.render(<MainPage/>,document.getElementById("root"));
+ReactDOM.render(<Router/>,document.getElementById("root"));
