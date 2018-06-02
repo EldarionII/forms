@@ -1,17 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
-import {Router} from './router'
+import {Router,BasicExample} from './router'
 import {MainPage} from './components/main-page/main-page'
 
-
-function component()
-{
-    let element = document.createElement("div");
-    element.id = "root";
-
-    return element;
-}
-
-document.body.appendChild(component());
-
-ReactDOM.render(<Router/>,document.getElementById("root"));
+ReactDOM.render(<BasicExample/>,document.body);
