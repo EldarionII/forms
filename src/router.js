@@ -16,7 +16,7 @@ export class Router extends React.Component
 }
 
 export const BasicExample = () => (
-    <BrowserRouter basename={"forms/dist/"}>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
         <div>
             <ul>
                 <li>
