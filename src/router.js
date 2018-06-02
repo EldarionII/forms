@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter, HashRouter, Switch, Route,Link} from 'react-router-dom'
+import {BrowserRouter, Switch, Route,Link} from 'react-router-dom'
 import {MainPage} from './components/main-page/main-page'
 
 export class Router extends React.Component
@@ -16,7 +16,7 @@ export class Router extends React.Component
 }
 
 export const BasicExample = () => (
-    <HashRouter>
+    <BrowserRouter basename={"https://eldarionii.github.io/forms/dist/"}>
         <div>
             <ul>
                 <li>
@@ -36,7 +36,7 @@ export const BasicExample = () => (
             <Route path="/about" component={About} />
             <Route path="/topics" component={Topics} />
         </div>
-    </HashRouter>
+    </BrowserRouter>
 );
 
 const Home = () => (
